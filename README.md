@@ -1,5 +1,21 @@
 # GPU Instance Manager
+
+[![Unity 2019.1+](https://img.shields.io/badge/unity-2019.4%2B-blue.svg)](https://unity3d.com/get-unity/download)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/dbrizov/NaughtyAttributes/blob/master/LICENSE)
+
 GPU Instance Manager provides a lot of batch savings to improve your game performance in Unity. GPU Instancing is a good way to improve your performance issues and also battery usages. Without GPU Instancing, Unity draws every single mesh one by one. For example, you have 300 cubes, Unity will create 300 draw call so there will be 300 batch (too bad). With this asset, you can draw 300 cubes using only 1 draw call. (Without shadows etc.)
+
+### Installation
+
+1. You can add git url via **Package Manager => Add package from git url**
+```
+https://github.com/supremepanda/GPUInstanceManager.git#upm
+```
+
+2. You can also install via git url by adding this entry in your **manifest.json**
+```
+"com.supremepanda.gpu_instance_manager": "https://github.com/supremepanda/GPUInstanceManager.git#upm"
+```
 
 ### When should I use GPU Instancing?
 
@@ -9,7 +25,7 @@ GPU Instance Manager provides a lot of batch savings to improve your game perfor
 ### to-DO
 
  - [x] Add shadow related parameters
- - [ ] Create upm package from asset to easy installing.
+ - [x] Create upm package from asset to easy installing.
  - [ ] Add ability to draw more than 1023 meshes.
 
 ### How to use?
