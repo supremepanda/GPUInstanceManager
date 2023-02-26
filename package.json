@@ -15,9 +15,9 @@
   ],
  "samples": [
     {
-        "displayName": "Demo",
+        "displayName": "Samples",
         "description": "This demo included with an example scene.",
-        "path": "Runtime/Demo~"
+        "path": "Samples~"
     }
  ],
   "author": {
