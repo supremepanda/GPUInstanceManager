@@ -14,6 +14,7 @@ jobs:
     - name: split upm branch
       run: |
         git subtree split --prefix=Assets/GPUInstanceManager -b upm
+	git checkout upm
 	if [[ -d "Runtime/Demo" ]]; then
           git mv Runtime/Demo Runtime/Demo~
           rm -f Runtime/Demo.meta
