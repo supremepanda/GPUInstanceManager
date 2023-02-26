@@ -3,7 +3,6 @@ on:
   push:
     branches:
     - master
-permissions: read-all|write-all
 jobs:
   split-upm:
     name: split upm branch
@@ -17,4 +16,5 @@ jobs:
         git subtree split --prefix=Assets/GPUInstanceManager -b upm
         git push -u origin upm
       env:
-        PKG_ROOT: Packages/package-name
+        DEFAULT_BRANCH: master
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
