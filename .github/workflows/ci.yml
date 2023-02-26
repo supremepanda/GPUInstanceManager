@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - master
+permissions: read-all|write-all
 jobs:
   split-upm:
     name: split upm branch
