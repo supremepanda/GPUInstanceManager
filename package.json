@@ -5,6 +5,8 @@
   "description": "Easy to use GPU instance manager for Unity.",
   "unity": "2019.1",
   "unityRelease": "0b5",
+  "licensesUrl": "https://github.com/supremepanda/GPUInstanceManager/blob/master/LICENSE",
+  "documentationUrl": "https://github.com/supremepanda/GPUInstanceManager#readme",
   "dependencies": {
  },
  "keywords": [
