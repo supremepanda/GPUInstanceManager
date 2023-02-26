@@ -1,0 +1,18 @@
+name: CI
+on:
+  push:
+    branches:
+    - master
+jobs:
+  split-upm:
+    name: split upm branch
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: split upm branch
+      run: |
+        git subtree split --prefix=Assets/GPUInstanceManager -b upm
+        git push -u origin upm
+      env:
+        PKG_ROOT: Packages/package-name
