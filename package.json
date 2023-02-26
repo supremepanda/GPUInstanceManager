@@ -17,7 +17,7 @@
     {
         "displayName": "Demo",
         "description": "This demo included with an example scene.",
-        "path": "Runtime/Demo"
+        "path": "Runtime/Demo~"
     }
  ],
   "author": {
