@@ -6,6 +6,7 @@ on:
 jobs:
   split-upm:
     name: split upm branch
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
       with:
