@@ -15,12 +15,12 @@ jobs:
       run: |
         git subtree split --prefix=Assets/GPUInstanceManager -b upm
         git checkout upm
-        if [[ -d "Runtime/Demo" ]]; then
-          git mv Runtime/Demo Runtime/Demo~
-          rm -f Runtime/Demo.meta
+        if [[ -d "Samples" ]]; then
+          git mv Samples Samples~
+          rm -f Samples.meta
           git config --global user.name 'github-bot'
           git config --global user.email 'github-bot@users.noreply.github.com'
-          git commit -am "fix: Demo => Demo~"
+          git commit -am "fix: Samples => Samples~"
         fi
         git push -u -f origin upm
       env:
