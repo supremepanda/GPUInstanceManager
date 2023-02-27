@@ -22,12 +22,6 @@ https://github.com/supremepanda/GPUInstanceManager.git#upm
  - If you are using same mesh and same material more than one. (bullets etc.) and
  - If your objects can not be static. (If you can use static, use static and do not use gpu instancing)
 
-### to-DO
-
- - [x] Add shadow related parameters
- - [x] Create upm package from asset to easy installing.
- - [ ] Add ability to draw more than 1023 meshes.
-
 ### How to use?
 
  1. Add **GPUInstanceService** prefab to your scene.
