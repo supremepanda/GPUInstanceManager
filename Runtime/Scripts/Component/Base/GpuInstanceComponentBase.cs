@@ -100,6 +100,8 @@ namespace GPUInstanceManager.Component.Base
                 Debug.LogError("Mesh renderer not found!", gameObject);
                 return;
             }
+
+            meshRenderer.enabled = false;
             _targetMaterials = meshRenderer.sharedMaterials;
         }
     }
