@@ -35,6 +35,8 @@ namespace GPUInstanceManager.Component
         {
             if (!Application.isPlaying)
                 return;
+            if (!gameObject.scene.IsValid())
+                return;
             SendInstanceDataToManager();
         }
 
