@@ -1,6 +1,6 @@
 {
   "name": "com.supremepanda.gpu_instance_manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "GPU Instance Manager",
   "description": "Easy to use GPU instance manager for Unity.",
   "unity": "2019.1",
