@@ -12,6 +12,8 @@ namespace GPUInstanceManager.Component
         [SerializeField] private bool _receiveShadows = true;
         protected override void SendInstanceDataToManager()
         {
+            if (GpuInstanceManager == null)
+                return;
             GpuInstanceManager.AddOrUpdateInstanceData(_targetMeshPair, _targetMaterials,
                 new KeyValuePair<int, GPUInstanceData>(_targetTransform.GetInstanceID(), _currentData),
                 _castShadows, _receiveShadows);
