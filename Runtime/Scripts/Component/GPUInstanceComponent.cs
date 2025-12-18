@@ -12,10 +12,10 @@ namespace GPUInstanceManager.Component
         [SerializeField] private bool _receiveShadows = true;
         protected override void SendInstanceDataToManager()
         {
-            UpdateCurrentData();
             GpuInstanceManager.AddOrUpdateInstanceData(_targetMeshPair, _targetMaterials,
                 new KeyValuePair<int, GPUInstanceData>(_targetTransform.GetInstanceID(), _currentData),
                 _castShadows, _receiveShadows);
+            UpdateCurrentData();
         }
 
         protected override void RemoveInstanceDataFromManager()
@@ -25,6 +25,8 @@ namespace GPUInstanceManager.Component
         
         private void UpdateCurrentData()
         {
+            if (_currentData == null)
+                return;
             _currentData.SetRotation(_targetTransform.rotation);
             _currentData.SetPosition(_targetTransform.position);
             _currentData.SetScale(_targetTransform.lossyScale);
